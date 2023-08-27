@@ -1,0 +1,60 @@
+Owner:Radha Ashtekar
+
+Trying to host my personal folder named as project1 onto my GitHub acc
+That is pushing that folder on to GitHub Account
+
+Step to follow on local device:
+
+1] In local device,I created a folder named as : project1
+2] git init helps to initiate empty git repo
+3] Added file named as : abc.txt
+4] git status,add,commit also used
+
+Steps to follow on remote repo or GitHub acc:
+
+1] Create any repository,name it as First_repo
+2] Copy the URL of created repository (.git url)
+3] Now attach that remote repo to my local folder
+
+Go to local device and perform following commands on git bash
+
+1] git remote add origin url
+2] git push origin master 
+3] git remote -v : Gives all urls that are attached to my local folder
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Errors I faced :
+
+git@github.com :Permission denied (publickey)
+fatal:could not read from remote repository
+Please make sure you have the correct access rights and the repository exits
+
+Solution to this error:
+
+1] Either use https url for remote repo but it needs futher authentication
+
+2] generate SSH Public key 
+
+  step 1 : ssh-keygen
+  step 2 : asking for name and passphrase leave it
+  step 3 : using cat "path where Public key is created on local device"
+           This gives Public key
+  step 4 : Now copy this public key and paste it on GitHub account
+  step 5 : GitHub account -> Settings -> SSH and GPG keys ->Add new Key
+  step 6 : Path where public key is created on local device: "/c/Users/Radha Ashok Ashtekar/.ssh/id_rsa.pub"
+
+ Use this link to resolve problem  : (YouTube Link) : https://jhooq.com/github-permission-denied-publickey/
+
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+ Some commands
+
+ 1] git remote add origin <url>
+ 2] git push origin master
+ 3] git remote -v
+ 4] git remote remove origin 
+
+-----------------------------------------
+-----------------------------------------
