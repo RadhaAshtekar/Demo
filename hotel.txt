@@ -1,2 +1,0 @@
-1] git pull origin main 
-This help to sync your local repo with remote one
